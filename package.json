@@ -3,13 +3,19 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "contract:emit": "prisma contract emit"
   },
   "dependencies": {
+    "@prisma/orm-postgres": "^8.0.0-rc.17",
+    "dotenv": "^18.0.7",
     "elysia": "latest"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@prisma/cli-engine": "0.7.0",
+    "@types/node": "^26.6.5",
+    "bun-types": "latest",
+    "prisma": "^8.0.0-rc.22"
   },
   "module": "src/index.js"
 }
